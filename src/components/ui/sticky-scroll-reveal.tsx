@@ -12,11 +12,13 @@ export const StickyScroll = ({
     title: string;
     description: string;
     image?: string; // Ensure image property is recognized
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     content?: React.ReactNode | any;
   }[];
   contentClassName?: string;
 }) => {
   const [activeCard, setActiveCard] = React.useState(0);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const ref = useRef<any>(null);
   const { scrollYProgress } = useScroll({
     container: ref,

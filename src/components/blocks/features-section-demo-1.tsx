@@ -96,7 +96,7 @@ export const Grid = ({
     </div>
   );
 };
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function GridPattern({ width, height, x, y, squares, ...props }: any) {
   const patternId = useId();
 
@@ -122,6 +122,7 @@ export function GridPattern({ width, height, x, y, squares, ...props }: any) {
       />
       {squares && (
         <svg x={x} y={y} className="overflow-visible">
+          {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
           {squares.map(([x, y]: any) => (
             <rect
               strokeWidth="0"

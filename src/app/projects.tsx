@@ -1,6 +1,4 @@
-import Image from "next/image";
 import LampDemo from "@/components/ui/lamp"; // Adjust the path if necessary
-import CardDemo from "@/components/blocks/cards-demo-3";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 export default function Projects() {

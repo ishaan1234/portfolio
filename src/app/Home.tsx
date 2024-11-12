@@ -2,7 +2,6 @@
 import React from "react";
 import { Boxes } from "../components/ui/background-boxes";
 import { cn } from "@/lib/utils";
-import { Cover } from "@/components/ui/cover";
 
 export function Home() {
   return (

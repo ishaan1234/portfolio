@@ -1,11 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import {
   motion,
-  AnimatePresence,
-  useScroll,
+  AnimatePresence
 } from "framer-motion";
-import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
@@ -20,11 +18,9 @@ export const FloatingNav = ({
   }[];
   className?: string;
 }) => {
-  const { scrollYProgress } = useScroll();
 
   // const [visible, setVisible] = useState(true);
   const visible=true
-  const router = useRouter();
   const goToExtra = () => {
     // window.location.href = '/'; // Navigate to the homepage
     window.open('/Extra', '_blank'); // Navigate to the homepage
@@ -66,6 +62,7 @@ export const FloatingNav = ({
           className
         )}
       >
+        {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
         {navItems.map((navItem: any, idx: number) => (
           <Link
             key={`link=${idx}`}
